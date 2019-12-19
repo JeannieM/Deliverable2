@@ -11,12 +11,20 @@ public class Deliverable2 {
 		String message = "";
 		int checkSum = 0;
 		int ascii;
+		String alpha;
 		
 		Scanner scan = new Scanner(System.in);
 		System.out.println("What message do you want to encode?");
 		
 		input = scan.nextLine().toUpperCase();
-		//System.out.println(input);
+		
+		System.out.println(input);
+//		alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+//		message = input;
+		
+		
+		
+		
 		
 		for (int i = 0; i < input.length(); i++) {
 			
