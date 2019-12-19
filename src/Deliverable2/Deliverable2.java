@@ -35,7 +35,7 @@ public class Deliverable2 {
 		}
 		
 		System.out.println("Your encoded message is: " + message);
-		System.out.println("Message checkSum is: " + checkSum);
+		System.out.println("Your message checkSum is: " + checkSum);
 		
 	}
 
