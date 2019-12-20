@@ -11,33 +11,33 @@ public class Deliverable2 {
 		String message = "";
 		int checkSum = 0;
 		int ascii;
-		String alpha;
 		
 		Scanner scan = new Scanner(System.in);
 		System.out.println("What message do you want to encode?");
 		
 		input = scan.nextLine().toUpperCase();
 		
-		System.out.println(input);
-//		alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-//		message = input;
-		
-		
-		
-		
 		
 		for (int i = 0; i < input.length(); i++) {
 			
-			char character = input.charAt(i);
-			ascii = (int) character;
+			//char character = input.charAt(i);
+			ascii = (int) input.charAt(i);
 			
-			if (message == "") {
-					message = "" + (ascii - 64);
-					checkSum = ascii;
-			}
-			else {
-					message = message + "-" + (ascii - 64);	
-					checkSum = checkSum + ascii;
+//			if (message == "") {
+//					message = "" + (ascii - 64);
+//					checkSum = ascii;
+//			}
+//			else {
+//					message = message + "-" + (ascii - 64);	
+//					checkSum = checkSum + ascii;
+//			}
+			
+			message += ascii - 64;
+			
+			checkSum += ascii;
+			
+			if (i < input.length() - 1) {
+				message += "-";
 			}
 				
 		}
